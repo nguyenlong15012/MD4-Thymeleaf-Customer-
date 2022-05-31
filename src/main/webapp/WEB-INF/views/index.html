@@ -4,6 +4,15 @@
 </head>
 <body>
 <h3>Customers</h3>
+<form th:action="@{/customer/search}" style="width: 200px">
+    <input type="text" name="name" value="">
+    <button>Search</button>
+</form>
+<p>
+    <a th:href="@{/customer}">
+        Back to customer list
+    </a>
+</p>
 <p>
     <a th:href="@{/customer/create}">
         Add new customer
